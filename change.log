@@ -1,0 +1,41 @@
+Change log
+8-6-2012
+1. for small halos, the cNFW given by AHF let some of the r_s too small to have any particles inside it, now these halos are marked as not trustworthy for mass bin analysis.
+2. plot the log(dN / dlogM) mass function and the normalized decay fraction.   
+3. add the vel bin based analysis
+
+8-12-2012
+1. add the analysis of the distribution of subhalos particle numbers
+
+9-3-2012
+1. add the mode of fixing mass bin, seee define.h
+
+10-4-2012
+1. calculate cNFW from Vmax and Rmax with defined radius bin numbers
+
+10-24-2012
+1. Output detailed halo profile (dark matter only)
+
+11-22-2012
+1. Add the analysis of decayed particle produced time.
+
+2-20-2013
+1. Redesign the analysis of sub-structures.
+
+2-23-2013
+1. Need to tread with get_mean_values() to include new parameters
+
+2-26-2013
+1. The mean value of halo properties except those related to the NFW parameter, are now calculated from 
+   soft_trust_flag.
+
+3-04-2013 
+1. Load the no-decay comparision simulation, the no-decay simulation determines the sub mass bin
+
+11-22-2013
+1. Add the mode to output halo density profile (both CDM and DDM), mass range controled in write_file.c.
+
+V-0.3
+1. remove the comparison with CDM
+2. subhaloes are binned directly to their mass
+3. Catalogue is made for Milky Way like structures (for post-process of python)
